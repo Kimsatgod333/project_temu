@@ -5,18 +5,365 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temu</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
-
+        <div class="top">
+            <div class="ad">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>무료배송 ></span>
+                            <br>
+                            <span>Special for you</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>무료반품</span>
+                            <br>
+                            <span>최대 90일*</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Temu 앱 다운로드</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="close"><img src="./images/ad/ad_close.png" alt="광고 닫기"></p>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <h1><img src="./images/logo.png" alt="Temu 메인페이지로 돌아가기"></h1>
+                <ul class="cate">
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/icon_001.png" alt="별점5점">
+                            <span>별점 5점</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/icon_002.png" alt="베스트셀러">
+                            <span>베스트셀러</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>카테고리</span>
+                            <img src="./images/icons/icon_003.png" alt="카테고리더보기">
+                        </a>
+                        <ul class="lnb"></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <form action="#" method="get">
+                    <input type="text" placeholder="여성 의류 상의">
+                    <button type="button" id="search"><img src="./images/search.png" alt="검색하기"></button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>로그인 | 계정</span>
+                            <br>
+                            <span>주문&계정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/icon_005.png" alt="지원센터">
+                            <span>지원센터</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/icon_006.png" alt="언어선택">
+                            <span>KO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/icon_007.png" alt="장바구니">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
-
+        <div class="swiper">
+            <div class="swiper-wrapper bnr">
+                <div class="swiper-slide slide1">slide1</div>
+                <div class="swiper-slide slide2">slide2</div>
+                <div class="swiper-slide slide3">slide3</div>
+                <div class="swiper-slide slide4">slide4</div>
+            </div>
+        </div>
+        <section id="sss">
+            <div class="sec_left">
+                <h2>Summer Special SALE</h2>
+                <div class="cate_btn">
+                    <ul>
+                        <li>
+                            <a href="#">남성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">여성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">전자기기</a>
+                        </li>
+                        <li>
+                            <a href="#">생활용품</a>
+                        </li>
+                        <li>
+                            <a href="#">여름가전제품(한정)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec_right">
+                <button type="button" class="prev"><img src="#" alt="이전"></button>
+                <p class="page_num">1/5</p>
+                <button type="button" class="next"><img src="#" alt="다음"></button>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">slide1</div>
+                    <div class="swiper-slide slide2">slide2</div>
+                    <div class="swiper-slide slide3">slide3</div>
+                    <div class="swiper-slide slide4">slide4</div>
+                    <div class="swiper-slide slide5">slide5</div>
+                </div>
+            </div>
+        </section>
+        <section id="best">
+            <h2>베스트셀러 TOP 5</h2>
+            <div class="cate_btn">
+                <ul>
+                    <li>
+                        <a href="#">남성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">여성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">전자기기</a>
+                    </li>
+                    <li>
+                        <a href="#">출산&유아</a>
+                    </li>
+                    <li>
+                        <a href="#">도서&미디어</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top5">
+                <!-- DB에서 가져오는 내용 -->
+            </div>
+        </section>
+        <section id="only_temu">
+            <h2>오직 Temu에서만! Temu 독점 할인 제품</h2>
+            <div class="cate_btn">
+                <ul>
+                    <li>
+                        <a href="#">남성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">여성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">전자기기</a>
+                    </li>
+                    <li>
+                        <a href="#">출산&유아</a>
+                    </li>
+                    <li>
+                        <a href="#">도서&미디어</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="only_list">
+                <!-- DB에서 가져오는 내용 -->
+            </div>
+        </section>
+        <section id="new">
+            <h2>NEW</h2>
+            <div class="cate_btn">
+                <ul>
+                    <li>
+                        <a href="#">남성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">여성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">전자기기</a>
+                    </li>
+                    <li>
+                        <a href="#">출산&유아</a>
+                    </li>
+                    <li>
+                        <a href="#">도서&미디어</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="new_product_list">
+                <!-- DB에서 가져오는 내용 -->
+            </div>
+        </section>
+        <h2>카테고리별 추천 상품</h2>
+        <section id="woman_cloth">
+            <h2>여성의류</h2>
+            <div class="cate_btn">
+                <ul>
+                    <li>
+                        <a href="#">상의</a>
+                    </li>
+                    <li>
+                        <a href="#">하의</a>
+                    </li>
+                    <li>
+                        <a href="#">외투</a>
+                    </li>
+                    <li>
+                        <a href="#">신발</a>
+                    </li>
+                    <li>
+                        <a href="#">액세서리</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="woman_cloth_list">
+                <!-- DB에서 가져오는 내용 -->
+            </div>
+        </section>
+        <section id="man_cloth">
+            <h2>남성의류</h2>
+            <div class="cate_btn">
+                <ul>
+                    <li>
+                        <a href="#">남성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">여성의류</a>
+                    </li>
+                    <li>
+                        <a href="#">전자기기</a>
+                    </li>
+                    <li>
+                        <a href="#">생활용품</a>
+                    </li>
+                    <li>
+                        <a href="#">여름가전제품(한정)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="man_cloth_list">
+                <!-- DB에서 가져오는 내용 -->
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <div class="footer_top">
+            <div class="c_info">
+                <h3>회사 정보</h3>
+                <ul>
+                    <li><a href="#">Temu 소개</a></li>
+                    <li><a href="#">Temu - 억만장자 처럼 쇼핑하기</a></li>
+                    <li><a href="#">제휴사 및 영향력 행사자: 커미션 받기</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">Temu의 나무 심기 프로그램</a></li>
+                </ul>
+            </div>
+            <div class="cs_center">
+                <h3>고객 센터</h3>
+                <ul>
+                    <li><a href="#">반품 및 환불 정책</a></li>
+                    <li><a href="#">지적 재산권 정책</a></li>
+                    <li><a href="#">배송 정보</a></li>
+                    <li><a href="#">의심스러운 활동 신고하기</a></li>
+                    <li><a href="#">유해 제품 정보</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h3>도움말</h3>
+                <ul>
+                    <li><a href="#">고객센터 및 FAQ</a></li>
+                    <li><a href="#">안전센터</a></li>
+                    <li><a href="#">Temu 구매 보호</a></li>
+                    <li><a href="#">Temu와 제휴하기</a></li>
+                </ul>
+            </div>
+            <div class="app_download">
+                <h3>Temu 앱 다운로드</h3>
+                <ul>
+                    <li>
+                        <a href="#" class="app_store">
+                            <img src="#" alt="IOS 앱스토어 다운로드">
+                            <span>여기서 다운로드</span>
+                            <span>App Store</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="google_play">
+                            <img src="#" alt="구글플레이 다운로드">
+                            <span>여기서 다운로드</span>
+                            <span>Google Play</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="notice">
+                <h3>사업자 정보 • 고지사항</h3>
+                <ul>
+                    <li><span>업체명: Elementary Innovation Pte. Ltd.</span></li>
+                    <li><span>주소: 6 Raffles Quay, #14-06, Singapore (048580) | 대표자: Qin Sun</span></li>
+                    <li><span>사업자등록번호: 201900304D | 전화번호: +65 6717 3228</span></li>
+                    <li><span>온라인 소매업체 보고서: 2025-공정-0013</span></li>
+                    <li><a href="#">사업자 정보 확인 링크 ></a></li>
+                </ul>
+            </div>
+            <div class="security">
+                <h3>보안 인증</h3>
+                <ul class="security_top">
+                    <li><img src="./images/security_logo/secu_logo_001.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_002.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_003.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_004.png" alt="인증"><li>
+                </ul>
+                <ul class="security_bottom">
+                    <li><img src="./images/security_logo/secu_logo_005.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_006.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_007.png" alt="인증"><li>
+                </ul>
+            </div>
+            <div class="sns">
+                <h3>Temu 공식 SNS</h3>
+                <ul>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,53 @@
+main {}
+main .swiper {}
+main .swiper .swiper-wrapper {}
+main .swiper .swiper-wrapper .swiper-slide {}
+main .swiper .swiper-wrapper .swiper-slide1 {}
+main .swiper .swiper-wrapper .swiper-slide2 {}
+main .swiper .swiper-wrapper .swiper-slide3 {}
+main .swiper .swiper-wrapper .swiper-slide4 {}
+/* 여름 할인 */
+main #sss {}
+main #sss .sec_left {}
+main #sss .sec_left h2 {}
+main #sss .sec_right {}
+main #sss .sec_right .prev {}
+main #sss .sec_right .page_num {}
+main #sss .sec_right .next {}
+main #sss .swiper {}
+main #sss .swiper .swiper-wrapper {}
+main #sss .swiper .swiper-wrapper .swiper-slide {}
+main #sss .swiper .swiper-wrapper .swiper-slide1 {}
+main #sss .swiper .swiper-wrapper .swiper-slide2 {}
+main #sss .swiper .swiper-wrapper .swiper-slide3 {}
+main #sss .swiper .swiper-wrapper .swiper-slide4 {}
+main #sss .swiper .swiper-wrapper .swiper-slide5 {}
+/* 베스트셀러 */
+main #best {}
+main #best h2 {}
+main #best .top5 {}
+/* 오직 테무 */
+main #only_temu {}
+main #only_temu h2 {}
+main #only_temu .only_list {}
+/* 신상품 */
+main #new {}
+main #new h2 {}
+main #new .new_product_list {}
+/* 카테고리별 추천상품 */
+main > h2 {}
+/* 여성의류 */
+main #woman_cloth {}
+main #woman_cloth h2 {}
+main #woman_cloth .woman_cloth_list {}
+/* 남성의류 */
+main #man_cloth {}
+main #man_cloth h2 {}
+main #man_cloth .man_cloth_list {}
+/* 공통 카테고리 리스트 버튼 CSS */
+.cate_btn {}
+.cate_btn ul {}
+.cate_btn ul li {}
+.cate_btn ul li a {}
+/* 카테고리 활성화 버튼 */
+.cate_btn_active {}
