@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/main.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/swiper.js" defer></script>
 </head>
 <body>
     <header>
@@ -74,7 +75,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <span>로그인 | 계정</span>
+                            <span>로그인 | 회원가입</span>
                             <br>
                             <span>주문&계정</span>
                         </a>
@@ -101,54 +102,28 @@
         </div>
     </header>
     <main>
-        <div class="swiper">
-            <div class="swiper-wrapper bnr">
+        <div class="swiper bnr_swiper">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide slide1">slide1</div>
                 <div class="swiper-slide slide2">slide2</div>
                 <div class="swiper-slide slide3">slide3</div>
                 <div class="swiper-slide slide4">slide4</div>
+                <div class="swiper-slide slide5">slide5</div>
+                <div class="swiper-slide slide6">slide6</div>
+                <div class="swiper-slide slide7">slide7</div>
+                <div class="swiper-slide slide8">slide8</div>
             </div>
+            <div class="swiper-scrollbar"></div>
         </div>
         <section id="sss">
-            <div class="sec_left">
+            <div class="title_wrap">
                 <h2>Summer Special SALE</h2>
-                <div class="cate_btn">
-                    <ul>
-                        <li>
-                            <a href="#">남성의류</a>
-                        </li>
-                        <li>
-                            <a href="#">여성의류</a>
-                        </li>
-                        <li>
-                            <a href="#">전자기기</a>
-                        </li>
-                        <li>
-                            <a href="#">생활용품</a>
-                        </li>
-                        <li>
-                            <a href="#">여름가전제품(한정)</a>
-                        </li>
-                    </ul>
+                <div class="sec_right">
+                    <button type="button" class="prev"><img src="./images/page_icon/prev.png" alt="이전"></button>
+                    <p class="page_num">1/5</p>
+                    <button type="button" class="next"><img src="./images/page_icon/next.png" alt="다음"></button>
                 </div>
             </div>
-            <div class="sec_right">
-                <button type="button" class="prev"><img src="#" alt="이전"></button>
-                <p class="page_num">1/5</p>
-                <button type="button" class="next"><img src="#" alt="다음"></button>
-            </div>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">slide1</div>
-                    <div class="swiper-slide slide2">slide2</div>
-                    <div class="swiper-slide slide3">slide3</div>
-                    <div class="swiper-slide slide4">slide4</div>
-                    <div class="swiper-slide slide5">slide5</div>
-                </div>
-            </div>
-        </section>
-        <section id="best">
-            <h2>베스트셀러 TOP 5</h2>
             <div class="cate_btn">
                 <ul>
                     <li>
@@ -161,15 +136,53 @@
                         <a href="#">전자기기</a>
                     </li>
                     <li>
-                        <a href="#">출산&유아</a>
+                        <a href="#">생활용품</a>
                     </li>
                     <li>
-                        <a href="#">도서&미디어</a>
+                        <a href="#" class="cate_btn_active">여름가전제품(한정)</a>
                     </li>
                 </ul>
             </div>
+            <div class="swiper sss_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">slide1</div>
+                    <div class="swiper-slide slide2">slide2</div>
+                    <div class="swiper-slide slide3">slide3</div>
+                    <div class="swiper-slide slide4">slide4</div>
+                    <div class="swiper-slide slide5">slide5</div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </section>
+        <section id="best">
+            <div class="title_wrap">
+                <h2>베스트셀러 TOP 5</h2>
+                <div class="cate_btn">
+                    <ul>
+                        <li>
+                            <a href="#" class="cate_btn_active">남성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">여성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">전자기기</a>
+                        </li>
+                        <li>
+                            <a href="#">출산&유아</a>
+                        </li>
+                        <li>
+                            <a href="#">도서&미디어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="top5">
-                <!-- DB에서 가져오는 내용 -->
+                <div class="top top1"><!-- DB에서 가져오는 내용 --></div>
+                <div class="top top2"></div>
+                <div class="top top3"></div>
+                <div class="top top4"></div>
+                <div class="top top5"></div>
             </div>
         </section>
         <section id="only_temu">
@@ -177,7 +190,7 @@
             <div class="cate_btn">
                 <ul>
                     <li>
-                        <a href="#">남성의류</a>
+                        <a href="#" class="cate_btn_active">남성의류</a>
                     </li>
                     <li>
                         <a href="#">여성의류</a>
@@ -202,7 +215,7 @@
             <div class="cate_btn">
                 <ul>
                     <li>
-                        <a href="#">남성의류</a>
+                        <a href="#" class="cate_btn_active">남성의류</a>
                     </li>
                     <li>
                         <a href="#">여성의류</a>
@@ -228,7 +241,7 @@
             <div class="cate_btn">
                 <ul>
                     <li>
-                        <a href="#">상의</a>
+                        <a href="#" class="cate_btn_active">상의</a>
                     </li>
                     <li>
                         <a href="#">하의</a>
@@ -253,19 +266,19 @@
             <div class="cate_btn">
                 <ul>
                     <li>
-                        <a href="#">남성의류</a>
+                        <a href="#" class="cate_btn_active">상의</a>
                     </li>
                     <li>
-                        <a href="#">여성의류</a>
+                        <a href="#">하의</a>
                     </li>
                     <li>
-                        <a href="#">전자기기</a>
+                        <a href="#">외투</a>
                     </li>
                     <li>
-                        <a href="#">생활용품</a>
+                        <a href="#">신발</a>
                     </li>
                     <li>
-                        <a href="#">여름가전제품(한정)</a>
+                        <a href="#">액세서리</a>
                     </li>
                 </ul>
             </div>
@@ -312,14 +325,12 @@
                 <ul>
                     <li>
                         <a href="#" class="app_store">
-                            <img src="#" alt="IOS 앱스토어 다운로드">
                             <span>여기서 다운로드</span>
                             <span>App Store</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="google_play">
-                            <img src="#" alt="구글플레이 다운로드">
                             <span>여기서 다운로드</span>
                             <span>Google Play</span>
                         </a>
@@ -341,26 +352,26 @@
             <div class="security">
                 <h3>보안 인증</h3>
                 <ul class="security_top">
-                    <li><img src="./images/security_logo/secu_logo_001.png" alt="인증"><li>
-                    <li><img src="./images/security_logo/secu_logo_002.png" alt="인증"><li>
-                    <li><img src="./images/security_logo/secu_logo_003.png" alt="인증"><li>
-                    <li><img src="./images/security_logo/secu_logo_004.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_001.png" alt="제이씨비"><li>
+                    <li><img src="./images/security_logo/secu_logo_002.png" alt="체크"><li>
+                    <li><img src="./images/security_logo/secu_logo_003.png" alt="프로텍트바이"><li>
+                    <li><img src="./images/security_logo/secu_logo_004.png" alt="피씨아이"><li>
                 </ul>
                 <ul class="security_bottom">
-                    <li><img src="./images/security_logo/secu_logo_005.png" alt="인증"><li>
-                    <li><img src="./images/security_logo/secu_logo_006.png" alt="인증"><li>
-                    <li><img src="./images/security_logo/secu_logo_007.png" alt="인증"><li>
+                    <li><img src="./images/security_logo/secu_logo_005.png" alt="에피더블유지"><li>
+                    <li><img src="./images/security_logo/secu_logo_006.png" alt="비자"><li>
+                    <li><img src="./images/security_logo/secu_logo_007.png" alt="세이프키"><li>
                 </ul>
             </div>
             <div class="sns">
                 <h3>Temu 공식 SNS</h3>
                 <ul>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
-                    <li><a href="#"><img src="#" alt="sns"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_001.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_002.png" alt="핀터레스트"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_003.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_004.png" alt="틱톡"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_005.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="./images/sns/sns_006.png" alt="인스타그램"></a></li>
                 </ul>
             </div>
         </div>

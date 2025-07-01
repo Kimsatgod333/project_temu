@@ -1,30 +1,105 @@
-main {}
-main .swiper {}
-main .swiper .swiper-wrapper {}
-main .swiper .swiper-wrapper .swiper-slide {}
-main .swiper .swiper-wrapper .swiper-slide1 {}
-main .swiper .swiper-wrapper .swiper-slide2 {}
-main .swiper .swiper-wrapper .swiper-slide3 {}
-main .swiper .swiper-wrapper .swiper-slide4 {}
+main {
+    padding-top:111px;
+}
+main h2 {
+    font-size:1.75rem;
+    font-weight:600;
+}
+main .swiper {
+    width:100%;
+    overflow:visible;
+}
+main .bnr_swiper {
+    margin-bottom:92px;
+    height:468px;
+}
+main .bnr_swiper .swiper-wrapper {}
+main .bnr_swiper .swiper-wrapper .swiper-slide {
+
+}
+main .bnr_swiper .swiper-wrapper .slide1 {
+    background-color:yellow;
+}
+main .bnr_swiper .swiper-wrapper .slide2 {
+    background-color:yellowgreen;
+
+}
+main .bnr_swiper .swiper-wrapper .slide3 {
+    background-color:red;
+
+}
+main .bnr_swiper .swiper-wrapper .slide4 {
+    background-color:cyan;
+}
+main .bnr_swiper .swiper-wrapper .slide5 {
+    background-color:yellow;
+}
+main .bnr_swiper .swiper-wrapper .slide6 {
+    background-color:yellowgreen;
+}
+main .bnr_swiper .swiper-wrapper .slide7 {
+    background-color:red;
+}
+main .bnr_swiper .swiper-wrapper .slide8 {
+    background-color:cyan;
+}
+main .bnr_swiper .swiper-scrollbar {
+    position:relative;
+    width:70%;
+    margin:0 auto;
+    top:30px;
+}
+main .bnr_swiper .swiper-scrollbar-scroll {
+    background:#000;
+}   
 /* 여름 할인 */
-main #sss {}
-main #sss .sec_left {}
-main #sss .sec_left h2 {}
-main #sss .sec_right {}
-main #sss .sec_right .prev {}
-main #sss .sec_right .page_num {}
-main #sss .sec_right .next {}
-main #sss .swiper {}
-main #sss .swiper .swiper-wrapper {}
-main #sss .swiper .swiper-wrapper .swiper-slide {}
-main #sss .swiper .swiper-wrapper .swiper-slide1 {}
-main #sss .swiper .swiper-wrapper .swiper-slide2 {}
-main #sss .swiper .swiper-wrapper .swiper-slide3 {}
-main #sss .swiper .swiper-wrapper .swiper-slide4 {}
-main #sss .swiper .swiper-wrapper .swiper-slide5 {}
+main #sss {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
+}
+main #sss .title_wrap {
+    display:flex;
+    padding:20px 0;
+    justify-content:space-between;
+    align-items:center;
+}
+main #sss .title_wrap h2 {
+    padding:20px 0;
+}
+main #sss .title_wrap .sec_right {
+    display:flex;
+}
+main #sss .title_wrap .sec_right .prev {}
+main #sss .title_wrap .sec_right .page_num {
+    font-size:0.875rem;
+    margin:0 5px;
+}
+main #sss .title_wrap .sec_right .next {}
+main #sss .sss_swiper {
+    width:100%;
+}
+main #sss .sss_swiper .swiper-wrapper {}
+main #sss .sss_swiper .swiper-wrapper .swiper-slide {}
+main #sss .sss_swiper .swiper-wrapper .slide1 {
+    background-color: aqua;
+}
+main #sss .sss_swiper .swiper-wrapper .slide2 {
+    background-color: green;
+}
+main #sss .sss_swiper .swiper-wrapper .slide3 {
+    background-color: aqua;
+}
+main #sss .sss_swiper .swiper-wrapper .slide4 {
+    background-color: green;
+}
+main #sss .sss_swiper .swiper-wrapper .slide5 {
+    background-color: aqua;
+}
 /* 베스트셀러 */
 main #best {}
-main #best h2 {}
+main #best .title_wrap {}
+main #best .title_wrap h2 {}
 main #best .top5 {}
 /* 오직 테무 */
 main #only_temu {}
@@ -35,7 +110,11 @@ main #new {}
 main #new h2 {}
 main #new .new_product_list {}
 /* 카테고리별 추천상품 */
-main > h2 {}
+main > h2 {
+    text-align:center;
+    font-size:2rem;
+    font-weight:500;
+}
 /* 여성의류 */
 main #woman_cloth {}
 main #woman_cloth h2 {}
@@ -45,9 +124,21 @@ main #man_cloth {}
 main #man_cloth h2 {}
 main #man_cloth .man_cloth_list {}
 /* 공통 카테고리 리스트 버튼 CSS */
-.cate_btn {}
-.cate_btn ul {}
+.cate_btn {
+    margin-bottom:60px;
+}
+.cate_btn ul {
+    display:flex;
+    gap:20px;
+}
 .cate_btn ul li {}
-.cate_btn ul li a {}
+.cate_btn ul li a {
+    font-size:0.75rem;
+}
 /* 카테고리 활성화 버튼 */
-.cate_btn_active {}
+.cate_btn_active {
+    padding:5px;
+    background:#000;
+    color:#fff;
+    border-radius:10px;
+}
