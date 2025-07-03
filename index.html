@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/db.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/swiper.js" defer></script>
 </head>
@@ -113,16 +114,14 @@
                 <div class="swiper-slide slide7">slide7</div>
                 <div class="swiper-slide slide8">slide8</div>
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <section id="sss">
             <div class="title_wrap">
                 <h2>Summer Special SALE</h2>
-                <div class="sec_right">
-                    <button type="button" class="prev"><img src="./images/page_icon/prev.png" alt="이전"></button>
-                    <p class="page_num">1/5</p>
-                    <button type="button" class="next"><img src="./images/page_icon/next.png" alt="다음"></button>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="cate_btn">
                 <ul>
@@ -142,17 +141,22 @@
                         <a href="#" class="cate_btn_active">여름가전제품(한정)</a>
                     </li>
                 </ul>
+                
             </div>
             <div class="swiper sss_swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">slide1</div>
-                    <div class="swiper-slide slide2">slide2</div>
-                    <div class="swiper-slide slide3">slide3</div>
-                    <div class="swiper-slide slide4">slide4</div>
-                    <div class="swiper-slide slide5">slide5</div>
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                    <div class="swiper-slide slide5"></div>
+                    <div class="swiper-slide slide6"></div>
+                    <div class="swiper-slide slide7"></div>
+                    <div class="swiper-slide slide8"></div>
+                    <div class="swiper-slide slide9"></div>
                 </div>
+                <div class="swiper-scrollbar"></div>
             </div>
-            <div class="swiper-scrollbar"></div>
         </section>
         <section id="best">
             <div class="title_wrap">
@@ -186,29 +190,31 @@
             </div>
         </section>
         <section id="only_temu">
-            <h2>오직 Temu에서만! Temu 독점 할인 제품</h2>
-            <div class="cate_btn">
-                <ul>
-                    <li>
-                        <a href="#" class="cate_btn_active">남성의류</a>
-                    </li>
-                    <li>
-                        <a href="#">여성의류</a>
-                    </li>
-                    <li>
-                        <a href="#">전자기기</a>
-                    </li>
-                    <li>
-                        <a href="#">출산&유아</a>
-                    </li>
-                    <li>
-                        <a href="#">도서&미디어</a>
-                    </li>
-                </ul>
+            <div class="title_wrap">
+                <h2>오직 Temu에서만! Temu 독점 할인 제품</h2>
+                <div class="cate_btn">
+                    <ul>
+                        <li>
+                            <a href="#" class="cate_btn_active">남성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">여성의류</a>
+                        </li>
+                        <li>
+                            <a href="#">전자기기</a>
+                        </li>
+                        <li>
+                            <a href="#">출산&유아</a>
+                        </li>
+                        <li>
+                            <a href="#">도서&미디어</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="only_list">
+            <ul class="only_list">
                 <!-- DB에서 가져오는 내용 -->
-            </div>
+            </ul>
         </section>
         <section id="new">
             <h2>NEW</h2>

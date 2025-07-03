@@ -1,3 +1,336 @@
-const temuDB = [
-    {},
+const sssDB = [
+    {
+        src:'./images/sss/sss_001.png',
+        name:'한경희이지라이프 초미세풍 발터치 리모...',
+        salePrice:39900,
+        rawPrice:52900,
+    },
+    {
+        src:'./images/sss/sss_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:21900,
+        rawPrice:31900,
+    },
+    {
+        src:'./images/sss/sss_003.png',
+        name:'홈플래닛 스탠드형 리모컨 선풍기',
+        salePrice:16800,
+        rawPrice:23800,
+    },
+    {
+        src:'./images/sss/sss_004.png',
+        name:'유파 기계 좌석식 5엽 선풍기',
+        salePrice:56000,
+        rawPrice:209000,
+    },
+    {
+        src:'./images/sss/sss_005.png',
+        name:'인더스 에어핏 서큘레이터형 리모컨 스...',
+        salePrice:48900,
+        rawPrice:88000,
+    },
+    {
+        src:'./images/sss/sss_001.png',
+        name:'한경희이지라이프 초미세풍 발터치 리모...',
+        salePrice:39900,
+        rawPrice:52900,
+    },
+    {
+        src:'./images/sss/sss_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:21900,
+        rawPrice:31900,
+    },
+    {
+        src:'./images/sss/sss_003.png',
+        name:'홈플래닛 스탠드형 리모컨 선풍기',
+        salePrice:16800,
+        rawPrice:23800,
+    },
+    {
+        src:'./images/sss/sss_004.png',
+        name:'유파 기계 좌석식 5엽 선풍기',
+        salePrice:56000,
+        rawPrice:209000,
+    },
+]
+const bestDB = [
+    {
+        src:'./images/best/best_001.png',
+        name:'STRIPE SUNDAY SHIRT',
+        salePrice:24918,
+        rawPrice:82762,
+    },
+    {
+        src:'./images/best/best_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:15930,
+        rawPrice:29500,
+    },
+    {
+        src:'./images/best/best_003.png',
+        name:'산타나 스트라이프 셔츠',
+        salePrice:98700,
+        rawPrice:156780,
+    },
+    {
+        src:'./images/best/best_004.png',
+        name:'야자수 그래픽 반소매 티셔츠',
+        salePrice:10500,
+        rawPrice:12650,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+]
+const onlyDB = [
+    {
+        src:'./images/only/only_001.png',
+        name:'플레임 반팔 티셔츠 블랙',
+        salePrice:39500,
+        rawPrice:89000,
+    },
+    {
+        src:'./images/only/only_002.png',
+        name:'레이크 시어서커 체크 셔츠',
+        salePrice:19900,
+        rawPrice:26900,
+    },
+    {
+        src:'./images/only/only_003.png',
+        name:'NO VISION 티셔츠',
+        salePrice:76990,
+        rawPrice:129000,
+    },
+    {
+        src:'./images/only/only_004.png',
+        name:'커스텀어클락 소프트 베이직 브이...',
+        salePrice:38300,
+        rawPrice:59000,
+    },
+    {
+        src:'./images/only/only_005.png',
+        name:'코프위 더블 스퀘어 오픈 카라 셔츠',
+        salePrice:19900,
+        rawPrice:54000,
+    },
+    {
+        src:'./images/only/only_006.png',
+        name:'POINT STITCH COLLAR SHIRTS',
+        salePrice:19990,
+        rawPrice:69000,
+    },
+    {
+        src:'./images/only/only_007.png',
+        name:'HALFTONE SYMBOL TEE',
+        salePrice:25900,
+        rawPrice:40000,
+    },
+    {
+        src:'./images/only/only_008.png',
+        name:'린넨 오픈카라 펜슬 스트라이프 셔츠',
+        salePrice:24918,
+        rawPrice:82762,
+    },
+    {
+        src:'./images/only/only_009.png',
+        name:'써머 링클 오션 체크남방',
+        salePrice:7900,
+        rawPrice:24000,
+    },
+    {
+        src:'./images/only/only_010.png',
+        name:'페이드 반팔 워크셔츠',
+        salePrice:39900,
+        rawPrice:75000,
+    },
+]
+const newDB = [
+    {
+        src:'./images/best/best_001.png',
+        name:'STRIPE SUNDAY SHIRT',
+        salePrice:24918,
+        rawPrice:82762,
+    },
+    {
+        src:'./images/best/best_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:15930,
+        rawPrice:29500,
+    },
+    {
+        src:'./images/best/best_003.png',
+        name:'산타나 스트라이프 셔츠',
+        salePrice:98700,
+        rawPrice:156780,
+    },
+    {
+        src:'./images/best/best_004.png',
+        name:'야자수 그래픽 반소매 티셔츠',
+        salePrice:10500,
+        rawPrice:12650,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+]
+const womanDB = [
+    {
+        src:'./images/best/best_001.png',
+        name:'STRIPE SUNDAY SHIRT',
+        salePrice:24918,
+        rawPrice:82762,
+    },
+    {
+        src:'./images/best/best_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:15930,
+        rawPrice:29500,
+    },
+    {
+        src:'./images/best/best_003.png',
+        name:'산타나 스트라이프 셔츠',
+        salePrice:98700,
+        rawPrice:156780,
+    },
+    {
+        src:'./images/best/best_004.png',
+        name:'야자수 그래픽 반소매 티셔츠',
+        salePrice:10500,
+        rawPrice:12650,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+]
+const manDB = [
+    {
+        src:'./images/best/best_001.png',
+        name:'STRIPE SUNDAY SHIRT',
+        salePrice:24918,
+        rawPrice:82762,
+    },
+    {
+        src:'./images/best/best_002.png',
+        name:'한일전기 아기바람 저소음 가정용 프리...',
+        salePrice:15930,
+        rawPrice:29500,
+    },
+    {
+        src:'./images/best/best_003.png',
+        name:'산타나 스트라이프 셔츠',
+        salePrice:98700,
+        rawPrice:156780,
+    },
+    {
+        src:'./images/best/best_004.png',
+        name:'야자수 그래픽 반소매 티셔츠',
+        salePrice:10500,
+        rawPrice:12650,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
+    {
+        src:'./images/best/best_005.png',
+        name:'브리츠 게이밍헤드셋, K35GH, 블루',
+        salePrice:21900,
+        rawPrice:65450,
+    },
 ]

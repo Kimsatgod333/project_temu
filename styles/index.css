@@ -1,5 +1,6 @@
 main {
     padding-top:111px;
+    background:#f5f5f5;
 }
 main h2 {
     font-size:1.75rem;
@@ -7,15 +8,15 @@ main h2 {
 }
 main .swiper {
     width:100%;
-    overflow:visible;
 }
 main .bnr_swiper {
     margin-bottom:92px;
-    height:468px;
+    height:550px;
+    position: relative;
 }
 main .bnr_swiper .swiper-wrapper {}
 main .bnr_swiper .swiper-wrapper .swiper-slide {
-
+    height:468px;
 }
 main .bnr_swiper .swiper-wrapper .slide1 {
     background-color:yellow;
@@ -43,72 +44,175 @@ main .bnr_swiper .swiper-wrapper .slide7 {
 main .bnr_swiper .swiper-wrapper .slide8 {
     background-color:cyan;
 }
-main .bnr_swiper .swiper-scrollbar {
-    position:relative;
-    width:70%;
-    margin:0 auto;
-    top:30px;
+main .bnr_swiper .swiper-pagination {
+    position:absolute;
+    width:calc(100% - 500px);
+    left:250px;
+    top:500px;
 }
-main .bnr_swiper .swiper-scrollbar-scroll {
-    background:#000;
-}   
+main .bnr_swiper .swiper-pagination-progressbar-fill {
+    background-color:#000;
+}
 /* 여름 할인 */
 main #sss {
-    padding:90px 250px;
+    padding:40px 250px 90px;
     overflow:hidden;
     margin:0 auto;
 }
 main #sss .title_wrap {
-    display:flex;
-    padding:20px 0;
-    justify-content:space-between;
-    align-items:center;
+    width:100%;
+    position: relative;
+}
+main #sss .title_wrap .swiper-pagination {
+    position:absolute;
+    top:26px;
+    left:47%;
+    font-size:0.875rem;
+    font-weight:400;
+}
+main #sss .title_wrap .swiper-button-prev {
+    position:absolute;
+    transform:scale(0.3);
+    color:#000;
+    left:1321px;
+    font-weight:400;
+}
+main #sss .title_wrap .swiper-button-next {
+    position:absolute;
+    transform:scale(0.3);
+    color:#000;
+    right:0;
+    font-weight:400;
 }
 main #sss .title_wrap h2 {
     padding:20px 0;
+    width:max-content;
 }
-main #sss .title_wrap .sec_right {
-    display:flex;
+main #sss .title_wrap .cate_btn {
+    position:relative;
+
 }
-main #sss .title_wrap .sec_right .prev {}
-main #sss .title_wrap .sec_right .page_num {
-    font-size:0.875rem;
-    margin:0 5px;
-}
-main #sss .title_wrap .sec_right .next {}
 main #sss .sss_swiper {
-    width:100%;
+    position: relative;
+    height:501px;
 }
-main #sss .sss_swiper .swiper-wrapper {}
-main #sss .sss_swiper .swiper-wrapper .swiper-slide {}
-main #sss .sss_swiper .swiper-wrapper .slide1 {
-    background-color: aqua;
+main #sss .sss_swiper .swiper-wrapper {
+    margin-top:60px;
 }
-main #sss .sss_swiper .swiper-wrapper .slide2 {
-    background-color: green;
+main #sss .sss_swiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:5px;
 }
-main #sss .sss_swiper .swiper-wrapper .slide3 {
-    background-color: aqua;
+main #sss .sss_swiper .swiper-wrapper .swiper-slide img {
+    margin-bottom:5px;
 }
-main #sss .sss_swiper .swiper-wrapper .slide4 {
-    background-color: green;
+main #sss .sss_swiper .swiper-wrapper .swiper-slide span {
+    font-size:0.875rem;
 }
-main #sss .sss_swiper .swiper-wrapper .slide5 {
-    background-color: aqua;
+main #sss .sss_swiper .swiper-wrapper .swiper-slide .name {
+    margin:5px 0;
+}
+main #sss .sss_swiper .swiper-wrapper .swiper-slide .price {}
+main #sss .sss_swiper .swiper-wrapper .swiper-slide .price del {
+    margin-left:5px;
+    color:#888;
+}
+main #sss .sss_swiper .swiper-wrapper .slide1 {}
+main #sss .sss_swiper .swiper-wrapper .slide2 {}
+main #sss .sss_swiper .swiper-wrapper .slide3 {}
+main #sss .sss_swiper .swiper-wrapper .slide4 {}
+main #sss .sss_swiper .swiper-wrapper .slide5 {}
+main .swiper-scrollbar-horizontal {
+    position:absolute;
+    width:50%;
+    margin:0 auto;
+    top:10000px;
+}
+main #sss .swiper-scrollbar-drag {
+    background:#000;
 }
 /* 베스트셀러 */
-main #best {}
-main #best .title_wrap {}
+main #best {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
+    display:grid;
+    grid-template:1fr / 1fr;
+}
+main #best .title_wrap {
+    display:flex;
+    align-items:center;
+}
 main #best .title_wrap h2 {}
 main #best .top5 {}
 /* 오직 테무 */
-main #only_temu {}
-main #only_temu h2 {}
-main #only_temu .only_list {}
+main #only_temu {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
+}
+main #only_temu .title_wrap {
+    display:flex;
+    align-items:center;
+    margin-bottom:60px;
+}
+main #only_temu .title_wrap h2 {
+    margin-right:80px;
+}
+main #only_temu .only_list {
+    display:flex;
+    flex-flow:row wrap;
+}
+main #only_temu .only_list a {
+    display:flex;
+    flex-flow:column nowrap;
+    width:calc((100% / 5) - 30px);
+    margin-right:30px;
+    margin-bottom:60px;
+}
+main #only_temu .only_list a span {
+    font-size:0.875rem;
+}
+main #only_temu .only_list a .name {
+    margin:5px 0;
+}
+main #only_temu .only_list a .price {}
+main #only_temu .only_list a .price del {
+    margin-left:5px;
+    color:#888;
+}
+main #only_temu .only_list a:nth-child(5n) {
+    margin-right:0;
+}
 /* 신상품 */
-main #new {}
-main #new h2 {}
-main #new .new_product_list {}
+main #new {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
+}
+main #new h2 {
+    margin-bottom:20px;
+}
+main #new .new_product_list {
+    display:flex;
+    flex-flow:row wrap;
+}
+main #new .new_product_list a {
+    display:flex;
+    flex-flow:column nowrap;
+    width:calc((100% / 5) - 30px);
+    margin-right:30px;
+    margin-bottom:60px;
+}
+main #new .new_product_list a span {
+    font-size:0.875rem;
+}
+main #new .new_product_list a .name {
+    margin:5px 0;
+}
+main #new .new_product_list a .price {}
+main #new .new_product_list a .price del {}
 /* 카테고리별 추천상품 */
 main > h2 {
     text-align:center;
@@ -116,17 +220,43 @@ main > h2 {
     font-weight:500;
 }
 /* 여성의류 */
-main #woman_cloth {}
-main #woman_cloth h2 {}
-main #woman_cloth .woman_cloth_list {}
-/* 남성의류 */
-main #man_cloth {}
-main #man_cloth h2 {}
-main #man_cloth .man_cloth_list {}
-/* 공통 카테고리 리스트 버튼 CSS */
-.cate_btn {
-    margin-bottom:60px;
+main #woman_cloth {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
 }
+main #woman_cloth h2 {
+    margin-bottom:20px;
+}
+main #woman_cloth .woman_cloth_list {
+    display:flex;
+    flex-flow:row wrap;
+}
+main #woman_cloth .woman_cloth_list a {}
+main #woman_cloth .woman_cloth_list a span {}
+main #woman_cloth .woman_cloth_list a .name {}
+main #woman_cloth .woman_cloth_list a .price {}
+main #woman_cloth .woman_cloth_list a .price del {}
+/* 남성의류 */
+main #man_cloth {
+    padding:90px 250px;
+    overflow:hidden;
+    margin:0 auto;
+}
+main #man_cloth h2 {
+    margin-bottom:20px;
+}
+main #man_cloth .man_cloth_list {
+    display:flex;
+    flex-flow:row wrap;
+}
+main #man_cloth .man_cloth_list a {}
+main #man_cloth .man_cloth_list a span {}
+main #man_cloth .man_cloth_list a .name {}
+main #man_cloth .man_cloth_list a .price {}
+main #man_cloth .man_cloth_list a .price del {}
+/* 공통 카테고리 리스트 버튼 CSS */
+.cate_btn {}
 .cate_btn ul {
     display:flex;
     gap:20px;
