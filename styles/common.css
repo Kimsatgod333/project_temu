@@ -71,8 +71,9 @@ header .top .close {
     top:13px;
 }
 header .bottom {
+    height:68px;
     background:#f3974c;
-    padding:10px 250px;
+    padding:0 250px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -80,7 +81,7 @@ header .bottom {
 header .bottom .left {
     display:flex;
     align-items:center;
-
+    height:100%;
 }
 header .bottom .left h1 {
     margin-right:60px;
@@ -89,6 +90,8 @@ header .bottom .left h1 img {}
 header .bottom .left .cate {
     display:flex;
     width:max-content;
+    height:100%;
+    align-items:center;
 }
 header .bottom .left .cate li {
     margin-right:30px;
@@ -96,15 +99,49 @@ header .bottom .left .cate li {
 header .bottom .left .cate li:last-child {
     margin:0;
 }
-header .bottom .left .cate li a {
+header .bottom .left .cate li > a {
     display:flex;
     align-items:center;
 }
 header .bottom .left .cate li a img {}
-header .bottom .left .cate li a span {
+header .bottom .left .cate li > a > span {
     font-size:0.875rem;
     margin:0 5px;
 }
+header .bottom .left .cate .lnb {
+    width:100%; height:max-content;
+    background:#fff;
+    padding:30px 250px;
+    position:fixed;
+    left:0;
+    top:110px;
+    transform-origin:center top;
+    transform:scaleY(0);
+    transition:all 0.3s;
+}
+header .bottom .left .cate .lnb > li {
+    display:flex;
+} 
+header .bottom .left .cate .lnb > li a {
+    color:#000
+}
+header .bottom .left .cate .lnb > li a span {
+    color:#000;
+}
+header .bottom .left .cate .lnb > li > a span {
+    width:200px;
+}
+header .bottom .left .cate .lnb > li > a {}
+header .bottom .left .cate .lnb > li .sub {
+    display:flex;
+}
+header .bottom .left .cate .lnb > li .sub li {}
+header .bottom .left .cate .lnb > li .sub li a {
+    display:flex;
+    flex-flow:column nowrap;
+}
+header .bottom .left .cate .lnb > li .sub li a img {}
+header .bottom .left .cate .lnb > li .sub li a span {}
 header .bottom .right {
     display:flex;
     align-items:center;
@@ -132,28 +169,28 @@ header .bottom .right form #search {
     top:10px;
 }
 header .bottom .right form #search img {}
-header .bottom .right ul {
+header .bottom .right > ul {
     display:flex;
     align-items:center;
     width:max-content;
 
 }
-header .bottom .right ul li {
+header .bottom .right > ul > li {
     margin-right:15px;
 }
-header .bottom .right ul li:last-child {
+header .bottom .right > ul >     li:last-child {
     margin:0;
 }
-header .bottom .right ul li:first-child {
+header .bottom .right > ul > li:first-child {
     background:url(../images/icons/icon_004.png) no-repeat left center;
     padding-left:24px;
 }
-header .bottom .right ul li:first-child a span:nth-last-of-type(1) {
+header .bottom .right > ul > li:first-child a span:nth-last-of-type(1) {
     font-size:0.625rem;
     margin-top:-5px;
 }
-header .bottom .right ul li:first-child a span:nth-last-of-type(2) {}
-header .bottom .right ul li a {
+header .bottom .right > ul > li:first-child a span:nth-last-of-type(2) {}
+header .bottom .right > ul > li a {
     display:flex;
     align-items:center;
 }
@@ -167,8 +204,36 @@ header .bottom .right ul li:first-child a span:first-child {
 header .bottom .right ul li:first-child a span:last-child{
     font-size:0.875rem;
 }
-header .bottom .right ul li a img {}
-header .bottom .right ul li a span {
+header .bottom .right ul .lang {}
+header .bottom .right ul .lang .lang_select {
+    background:#fff;
+    position:fixed;
+    display:flex;
+    flex-flow:column nowrap;
+    border-radius: 5px;
+    align-items:center;
+    width:80px;
+    margin:0 auto;
+    padding:10px;
+    transform-origin:center top;
+    transform:scaleY(0);
+    transition:all 0.3s;
+}
+header .bottom .right ul .lang .lang_select li {
+    width:100%;
+}
+header .bottom .right ul .lang .lang_select li:nth-of-type(2) {
+    margin:5px 0;
+    padding:5px 0;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+header .bottom .right ul .lang .lang_select li a {
+    color:#000;
+    font-size:0.875rem;
+}
+header .bottom .right > ul li a img {}
+header .bottom .right > ul li a span {
     display:inline-block;
     font-size:0.875rem;
     margin-left:5px;
