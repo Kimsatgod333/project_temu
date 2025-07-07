@@ -58,28 +58,37 @@ main #sss {
 }
 main #sss .title_wrap {
     width:100%;
-    position: relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-main #sss .title_wrap .swiper-pagination {
-    position:absolute;
-    top:26px;
-    left:47%;
+main #sss .title_wrap .page_btn_wrap {
+    width:100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+main #sss .title_wrap .page_btn_wrap * {
+    position:unset;
+}
+main #sss .title_wrap .page_btn_wrap .swiper-pagination {
+    width:max-content;
     font-size:0.875rem;
     font-weight:400;
 }
-main #sss .title_wrap .swiper-button-prev {
-    position:absolute;
+
+main #sss .title_wrap .page_btn_wrap .swiper-button-prev {
     transform:scale(0.3);
     color:#000;
-    left:1521px;
     font-weight:400;
+    padding-top:72px;
 }
-main #sss .title_wrap .swiper-button-next {
-    position:absolute;
+main #sss .title_wrap .page_btn_wrap .swiper-button-next {
     transform:scale(0.3);
     color:#000;
-    right:0;
     font-weight:400;
+    padding-top:72px;
 }
 main #sss .title_wrap h2 {
     padding:20px 0;
