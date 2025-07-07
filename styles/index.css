@@ -1,7 +1,4 @@
-main {
-    padding-top:111px;
-    background:#f5f5f5;
-}
+main {}
 main h2 {
     font-size:1.75rem;
     font-weight:600;
@@ -130,8 +127,8 @@ main #sss .sss_swiper .swiper-wrapper .slide4 {}
 main #sss .sss_swiper .swiper-wrapper .slide5 {}
 main .swiper-scrollbar-horizontal {
     position:absolute;
-    width:50%;
-    margin:0 auto;
+    width:calc(100% - 500px);
+    left:250px;
 }
 main #sss .swiper-scrollbar-drag {
     background:#000;
@@ -375,6 +372,7 @@ main .more {
 .cate_btn ul li {
     display:flex;
     align-items:center;
+    width: max-content;
 }
 .cate_btn ul li a {
     width:max-content;
