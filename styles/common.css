@@ -112,9 +112,8 @@ header .bottom .left .cate .lnb {
     width:100%; height:max-content;
     background:#fff;
     padding:30px 250px;
-    position:fixed;
+    position:absolute;
     left:0;
-    top:110px;
     transform-origin:center top;
     transform:scaleY(0);
     transition:all 0.3s;

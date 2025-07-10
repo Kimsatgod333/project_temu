@@ -1,11 +1,3 @@
-//광고 닫기
-const adClose = document.querySelector('header .top .close')
-const ad = document.querySelector('header .top')
-const main = document.querySelector('main')
-adClose.addEventListener('click',()=>{
-    ad.style.display = 'none';
-    main.style.paddingTop = 'calc(110px - 42px)';
-})
 //lnb js
 const cate = document.querySelector('.cate')
 const lnb = document.querySelector('.cate .lnb');
@@ -36,4 +28,12 @@ login.addEventListener('click', ()=>{
 })
 cart.addEventListener('click', ()=>{
     window.location.href = './login.html'
+})
+//광고 닫기
+const adClose = document.querySelector('header .top .close')
+const ad = document.querySelector('header .top')
+const main = document.querySelector('main')
+adClose.addEventListener('click',()=>{
+    ad.style.display = 'none';
+    main.style.paddingTop = 'calc(110px - 42px)';
 })
