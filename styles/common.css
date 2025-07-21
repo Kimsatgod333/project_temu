@@ -114,6 +114,9 @@ header .bottom .left .cate .lnb {
     padding:30px 250px;
     position:absolute;
     left:0;
+    display:flex;
+    flex-flow:column nowrap;
+    gap:80px;
     transform-origin:center top;
     transform:scaleY(0);
     transition:all 0.3s;
@@ -133,14 +136,26 @@ header .bottom .left .cate .lnb > li > a span {
 header .bottom .left .cate .lnb > li > a {}
 header .bottom .left .cate .lnb > li .sub {
     display:flex;
+
 }
 header .bottom .left .cate .lnb > li .sub li {}
 header .bottom .left .cate .lnb > li .sub li a {
     display:flex;
     flex-flow:column nowrap;
 }
-header .bottom .left .cate .lnb > li .sub li a img {}
-header .bottom .left .cate .lnb > li .sub li a span {}
+header .bottom .left .cate .lnb > li .sub li a .img_border {
+    width:64px;
+    height:64px;
+    overflow:hidden;
+    border-radius:15px;
+}
+header .bottom .left .cate .lnb > li .sub li a .img_border img {
+    width:100%;
+}
+header .bottom .left .cate .lnb > li .sub li a span {
+    font-size:1rem;
+    margin-top:5px;
+}
 header .bottom .right {
     display:flex;
     align-items:center;
@@ -177,7 +192,7 @@ header .bottom .right > ul {
 header .bottom .right > ul > li {
     margin-right:15px;
 }
-header .bottom .right > ul >     li:last-child {
+header .bottom .right > ul > li:last-child {
     margin:0;
 }
 header .bottom .right > ul > li:first-child {
