@@ -6,8 +6,9 @@
     <title>Temu</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <script src="./scripts/db.js"defer></script>
-    <script src="./scripts/common.js"defer></script>
+    <link rel="stylesheet" href="./styles/buy.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/buy.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
         </div>
         <div class="bottom">
             <div class="left">
-                <h1><a href="./index.html"><img src="./images/logo.png" alt="Temu 메인페이지로 돌아가기"></a></h1>
+                <h1><a href="./index.html" class="logo"><img src="./images/logo.png" alt="Temu"></a></h1>
                 <ul class="cate">
                     <li>
                         <a href="#">
@@ -149,7 +150,7 @@
                 </form>
                 <ul>
                     <li>
-                        <a href="./login.html">
+                        <a href="./login.html" class="login">
                             <span>로그인 | 회원가입</span>
                             <br>
                             <span>주문&계정</span>
@@ -179,7 +180,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./login.html">
+                        <a href="./login.html" class="cart">
                             <img src="./images/icons/icon_007.png" alt="장바구니">
                         </a>
                     </li>
@@ -188,7 +189,153 @@
         </div>
     </header>
     <main>
-
+        <div class="product_left_wrap">
+            <div class="nav">
+                <a href="./index.html">홈</a>
+                <a href="#">생활용품</a>
+                <a href="#">가전 제품</a>
+                <a href="#">한경희이지라이프 초미세풍 발터치 선풍기</a>
+            </div>
+            <div class="img_wrap">
+                <div class="left_img">
+                    <img src="./images/sub_product_img/product001.jpg" alt="상품사진">
+                    <img src="./images/sub_product_img/product002.jpg" alt="상품사진">
+                    <img src="./images/sub_product_img/product003.jpg" alt="상품사진">
+                    <img src="./images/sub_product_img/product004.jpg" alt="상품사진">
+                    <img src="./images/sub_product_img/product005.jpg" alt="상품사진">
+                </div>
+                <div class="right_img">
+                    <img src="./images/sub_product_img/product001.jpg" alt="상품사진">
+                </div>
+            </div>
+            <div class="more">
+                <h2>상품정보</h2>
+                <div class="more_img"><img src="" alt=""></div>
+                <button type="button" class="view_more"><img src="./images/more_icon.png" alt="더보기"></button>
+            </div>
+            <div class="another_product">
+                <h2>연관 추천 제품</h2>
+                <ul class="another_top">
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another001.jpg" alt="대우어플라이언스 초미세풍 발터치 리모컨 선풍기">
+                            <span class="name">대우어플라이언스 초미...</span>
+                            <span class="price">52,550원<del>140,600원</del></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another002.png" alt="에이케이리빙 유파 발터치 리모컨 선풍기">
+                            <span class="name">에이케이리빙 유파...</span>
+                            <span class="price">34,900원<del>98,000원</del></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another003.jpg" alt="홈플래닛 스탠드형 리모컨 선풍기">
+                            <span class="name">홈플래닛 스탠드형 리...</span>
+                            <span class="price">35,990원</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="another_bottom">
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another004.jpg" alt="신일 좌석용 리모컨 선풍기">
+                            <span class="name">신일 좌석용 리모컨 선풍기</span>
+                            <span class="price">57,900원<del>173,240원</del></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another005.jpg" alt="유파 리모컨 서큘레이터 선풍기">
+                            <span class="name">유파 리모컨 서큘레이터 선풍기</span>
+                            <span class="price">37,000원<del>108,000원</del></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/sub_another/another006.jpg" alt="모리츠 저소음 발터치 초미풍 선풍기 + 리모컨 세트">
+                            <span class="name">모리츠 저소음 발터치 초...</span>
+                            <span class="price">34,800원<del>59,000원</del></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="review_wrap">
+                <h2>리뷰 <em>(211)</em></h2>
+                <div class="review_list">
+                    <ul>
+                        <li>
+                            <p class="user_id">kim**</p>
+                            <p class="grade"><em>★</em>5.0</p>
+                            <p class="date">2025.07.20</p>
+                            <p class="text">너무 좋아요. 고장도 안나고 오래가요</p>
+                        </li>
+                        <li>
+                            <p class="user_id">galo**</p>
+                            <p class="grade"><em>★</em>5.0</p>
+                            <p class="date">2025.07.20</p>
+                            <p class="text">완전 만족! 리모컨 작동이 가능해서 편리해요!</p>
+                        </li>
+                        <li>
+                            <p class="user_id">lawl**</p>
+                            <p class="grade"><em>★</em>5.0</p>
+                            <p class="date">2025.07.20</p>
+                            <p class="text">여름 필수템 완전 강추 드립니다.</p>
+                        </li>
+                        <li>
+                            <p class="user_id">mika**</p>
+                            <p class="grade"><em>★</em>5.0</p>
+                            <p class="date">2025.07.20</p>
+                            <p class="text">2025 최고의 갓성비템 입니당!</p></li>
+                    </ul>
+                </div>
+                <button type="button" class="view_more"><img src="./images/more_icon.png" alt="더보기"></button>
+            </div>
+        </div>
+        <div class="product_right_wrap">
+            <h2>한경희이지라이프 초미세풍 발터치 선풍기</h2>
+            <p class="review"><a href="#">4.9/5 <em>211개의 리뷰</em></a></p>
+            <p class="delivery_free">특별 무료배송 혜택 적용중</p>
+            <div class="price">
+                <p class="raw_price"><del>52,900원</del></p>
+                <p class="sale_price"><em>15%</em>39,900원</p>
+            </div>
+            <select name="option" id="product_option">
+                <option value="">옵션을 선택해주세요</option>
+                <option value="nomal">한경희이지라이프 초미세풍 발터치 선풍기 (+0원)</option>
+            </select>
+            <div class="count">
+                <button type="button" id="minus">-</button>
+                <p></p>
+                <button type="button" id="plus">+</button>
+            </div>
+            <div class="total_price">
+                <p><em></em>원</p>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" id="cart">장바구니</button>
+                <button type="button" id="buy">바로구매</button>
+            </div>
+            <div class="delivery_info">
+                <h3><a href="#"><img src="./images/ad/ad_icon_001.png" alt="배송정보"><span><em>배송정보</em><img src="./images/right_icon.png" alt="더보기"></span></a></h3>
+                <p class="delivery_time">배송예정 : 내일 14시 도착예정</p>
+                <p class="delivery_corp">배송업체 : cj, 한진, ...</p>
+            </div>
+            <div class="shopping_security">
+                <h3><a href="#"><img src="./images/security_icon.png" alt="쇼핑보안"><span><em>쇼핑보안</em><img src="./images/right_icon.png" alt="더보기"></span></a></h3>
+                <ul>
+                    <li>안전한 결제 옵션</li>
+                    <li>안전한 물류</li>
+                    <li>개인 정보 보호</li>
+                    <li>물류 보호</li>
+                </ul>
+            </div>
+            <div class="pi_security">
+                <h3><a href="#"><img src="./images/ad/ad_icon_002.png" alt="무료반품"><span><em>무료반품, 가격조정 관련안내</em><img src="./images/right_icon.png" alt="더보기"></span></a></h3>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer_top">

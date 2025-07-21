@@ -16,30 +16,28 @@ main .bnr_swiper .swiper-wrapper .swiper-slide {
     height:468px;
 }
 main .bnr_swiper .swiper-wrapper .slide1 {
-    background-color:yellow;
+    background:url(../images/bnr/bnr001.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide2 {
-    background-color:yellowgreen;
-
+    background:url(../images/bnr/bnr002.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide3 {
-    background-color:red;
-
+    background:url(../images/bnr/bnr003.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide4 {
-    background-color:cyan;
+    background:url(../images/bnr/bnr004.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide5 {
-    background-color:yellow;
+    background:url(../images/bnr/bnr001.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide6 {
-    background-color:yellowgreen;
+    background:url(../images/bnr/bnr002.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide7 {
-    background-color:red;
+    background:url(../images/bnr/bnr003.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-wrapper .slide8 {
-    background-color:cyan;
+    background:url(../images/bnr/bnr004.jpg) no-repeat center / cover;
 }
 main .bnr_swiper .swiper-pagination {
     position:absolute;
