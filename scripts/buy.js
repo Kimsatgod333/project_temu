@@ -56,3 +56,7 @@ viewMore.addEventListener('click',(e)=>{
     e.preventDefault()
     viewMore.style.display = 'none'
 })
+const reviewMore = document.querySelector('.review_wrap .view_more')
+reviewMore.addEventListener('click',()=>{
+    reviewMore.style.display = 'none'
+})
