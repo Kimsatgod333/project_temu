@@ -177,7 +177,7 @@ header .bottom .right > ul {
 header .bottom .right > ul > li {
     margin-right:15px;
 }
-header .bottom .right > ul >     li:last-child {
+header .bottom .right > ul > li:last-child {
     margin:0;
 }
 header .bottom .right > ul > li:first-child {
